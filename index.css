@@ -42,6 +42,9 @@ form {
   padding: 20px;
   line-height: 2;
 }
+.tip strong {
+  color: rgb(66, 33, 28);
+}
 footer {
   text-align: center;
   color: rgba(66, 33, 28, 0.8);
