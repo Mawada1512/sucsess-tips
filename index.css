@@ -11,7 +11,7 @@ header {
 h1 {
   color: rgb(66, 33, 28);
   margin-top: 20px;
-  margin-left: 150px;
+  text-align: center;
 }
 form {
   background: rgb(252, 233, 230);
