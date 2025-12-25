@@ -15,6 +15,10 @@ function getTips(event) {
     "you are a life coach and personal trainer who is very export and you have red a lot of books in general you have experience in life and you can give advices and tips in any topic to help people, please write the tips and advices in very short way , be specific and  fallow what user want them to be about, at the end make <br/> and sign it with with love MIMI, put the sign in <strong> ";
   let prompt = ` User Instructions: Generate a Tip about ${usersInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
+
+  let hide = document.querySelector("#tip");
+  hide.classList.remove("hidden");
+  hide.innerHTML = `<div class = "blink">⏳ we are genareting the advice about ${usersInput.value} for you</div>`;
   axios.get(apiUrl).then(genaretTips);
 }
 

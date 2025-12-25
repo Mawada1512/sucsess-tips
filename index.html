@@ -14,20 +14,24 @@
         <h1>AI Genaral Advices & Tips</h1>
       </header>
       <main>
-        <form id="tip-form">
-          <input
-            type="text"
-            placeholder="what type of tip you want!"
-            autofocus
-            required
-            autocomplete="off"
-            class="input"
-            id="users-input"
-          />
-          <input type="submit" value="search" class="search-button" />
-        </form>
-        <div class="tip" id="tip"></div>
+        <div class="form-container">
+          <form id="tip-form">
+            <input
+              type="text"
+              placeholder="what type of advice or tip you want!"
+              autofocus
+              required
+              autocomplete="off"
+              class="input"
+              id="users-input"
+            />
+            <input type="submit" value="search" class="search-button" />
+          </form>
+          <div class="hint">i.e. sucsess, sleep, love...</div>
+        </div>
+        <div class="tip hidden" id="tip"></div>
       </main>
+
       <footer>
         This Site is made by
         <a href="https://github.com/Mawada1512" target="_blank">Mawada Beedy</a>
